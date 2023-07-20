@@ -1,0 +1,448 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+header {
+}
+nav {
+    min-height: 60px;
+    max-width: 1400px;
+    min-width: 370px;
+    margin: auto;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f9f9f9;
+}
+.nav-logo {
+    display: flex;
+}
+.nav-logo img {
+    width: 3rem;
+    margin-right: 0.5rem;
+}
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.nav-logo span {
+    color: #ff42a5;
+}
+.menu-container {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.menu-container a {
+    text-decoration: none;
+    color: #3c354f;
+}
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #e7e6e9;
+    border-radius: 0.5rem;
+}
+.fa-brands {
+    font-size: 2rem;
+}
+.fa-youtube {
+    color: red;
+}
+/* nav section style done */
+
+/* banner section starts here */
+.banner {
+    max-width: 1400px;
+    min-width: 370px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text-part image-part";
+    align-items: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-area: text-part;
+    padding: 1rem;
+}
+.bg-image img {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+}
+.banner > img {
+    height: 75vh;
+    width: 80%;
+    grid-area: image-part;
+}
+.banner-text title {
+    font-weight: 600;
+}
+.transparent-color {
+    background-image: linear-gradient(to top, #a254e2, #ff42a5);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.goat {
+    font-size: 6rem;
+    font-weight: 800;
+}
+.banner-text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #534c64;
+}
+.fa-circle-play,
+.fa-download {
+    color: red;
+}
+.fa-user-group {
+    color: black;
+}
+.primary-btn {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+}
+.btn-container {
+    display: flex;
+    gap: 3rem;
+}
+.sign-in {
+    width: 7rem;
+    background-color: #ff42a5;
+}
+.go-rogue {
+    width: 9rem;
+    background-color: #4ec5f7;
+}
+
+.banner .title {
+    font-weight: 600;
+}
+
+/* banner section ends here */
+/* gamer section starts here */
+
+.gamer {
+    max-width: 1400px;
+    min-width: 370px;
+    display: flex;
+    align-items: center;
+    background-color: #fff9fc;
+    margin: auto;
+}
+.gamer-image {
+    width: 60%;
+}
+.gamer-image img {
+    width: 100%;
+}
+.gamer-text {
+    width: 40%;
+    text-align: right;
+}
+.gamer-title {
+    margin-bottom: 1rem;
+}
+.para {
+    font-size: 1.2rem;
+    color: #534c64;
+}
+.know-more {
+    background-color: #ff42a5;
+    width: 10rem;
+    margin: 1rem 0px;
+}
+.mini-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.gamer-text .para {
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+/* gamer section ends here */
+/* video section starts here */
+.videos {
+    max-width: 1400px;
+    min-width: 370px;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.videos-text-part {
+    max-width: 680px;
+    text-align: center;
+}
+.videos-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+.videos-container > div {
+    width: 20%;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+.overlay i {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+.image-container:hover .overlay {
+    opacity: 1;
+    transition: 0.8s;
+    border-radius: 1rem;
+}
+.videos-container div .para {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 350px;
+    /* padding: 0px 5px; */
+}
+.videos-container img {
+    width: 100%;
+}
+/* videos section ends here */
+/* play instant section starts here */
+
+.play-instant {
+    max-width: 1400px;
+    min-width: 370px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-instant-text {
+    max-width: 350px;
+    text-align: right;
+}
+.play-instant-image {
+    position: relative;
+}
+.large-image {
+    max-width: 600px;
+}
+.small-image {
+    max-width: 300px;
+    position: absolute;
+    left: -25%;
+    bottom: -10%;
+}
+
+/* play instant section ends here 
+play games section starts here  */
+
+.play-games {
+    max-width: 1400px;
+    min-width: 370px;
+    margin: auto;
+    display: flex;
+    margin-top: 20vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.play-games-image {
+    position: relative;
+}
+.play-games-text {
+    max-width: 350px;
+    text-align: left;
+}
+.second-large-image {
+    max-width: 600px;
+}
+.play-games-text h3 {
+    font-size: 2rem;
+}
+.second-small-image {
+    max-width: 300px;
+    position: absolute;
+    right: -25%;
+    bottom: -20%;
+}
+
+/* play games section ends here 
+careeer section starts here */
+
+.career {
+    background-color: #ff42a5;
+    width: 100%;
+    margin-top: 160px;
+    min-width: 370px;
+}
+.career-container {
+    max-width: 1400px;
+    min-width: 370px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    /* box-sizing: border-box;
+    padding: 100px; */
+}
+.career-text {
+    width: 50%;
+    color: white;
+}
+.career-image {
+    width: 50%;
+}
+.career-image img {
+    width: 100%;
+}
+.carrer-title {
+    margin-bottom: 2rem;
+}
+.career-text .para {
+    color: white;
+    margin-bottom: 1rem;
+}
+.artist {
+    display: flex;
+    justify-content: space-between;
+}
+.artist-location p {
+    text-align: right;
+}
+.see-btn {
+    margin-top: 2rem;
+    padding: 20px 30px;
+    border: 0px;
+    border-radius: 30px;
+    color: #ff42a5;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* career section ends here 
+.type-of-games section starts here  */
+
+.type-of-games {
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 100px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.type-of-games a {
+    text-decoration: none;
+    color: black;
+}
+.type-of-games div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 15rem;
+    margin-bottom: 0.5rem;
+    /* padding: 10px; */
+    /* box-sizing: border-box; */
+}
+.type-of-games div:hover {
+    border: 2px solid #ff42a5;
+    color: #ff42a5;
+    border-radius: 40px;
+    transition: 0.1s;
+}
+
+/* .type-of-games section ends here 
+footer section start here */
+
+footer {
+    height: auto;
+    min-width: 370px;
+    width: 100%;
+    background-color: #0b0223;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+footer p {
+    text-align: center;
+}
+footer h3 {
+    color: white;
+    text-decoration: none;
+}
+.support-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.support-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.icon-container a {
+    color: white;
+}
+.terms-condition {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.terms-condition a {
+    text-decoration: none;
+    color: white;
+}
